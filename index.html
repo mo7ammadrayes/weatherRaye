@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Rayes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner">The Weather Rayes</header>
+    
+    <form action="" class="weatherForm">
+        <input class="weatherInput" type="text" placeholder="enter a city name" aria-label="City Name">
+        <button type="submit"> search</button>
+        <div id="suggestions" class="suggestions-container"></div>
+    </form>
+    
+    <div class="card" style="display: none;"></div>
+    <button class="favBtn" style="display: none;" aria-label="Add to Favorites">add to favorites</button>
+    
+    <div id="favoritesList">
+        <h2>Your Favorites:</h2>
+        <ul id="favorites"></ul>
+    </div>
+    
+    <footer role="contentinfo">All the data was collected from OpenWeatherMap</footer>
+
+    <!-- Include your JavaScript file here -->
+    <script src="index.js"></script>
+</body>
+</html>
