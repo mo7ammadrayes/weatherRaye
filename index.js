@@ -4,7 +4,7 @@ const weatherForm = document.querySelector(".weatherForm");
 const cityInput = document.querySelector(".weatherInput");
 const weatherCard = document.querySelector(".card");
 const suggestionsContainer = document.querySelector(".suggestions-container");
-const apiKey = process.env.API_KEY;
+const apiKey = "";// enter your weathermap API key here.
 let timeInterval;
 const favBtn=document.querySelector(".favBtn")
 const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
@@ -154,7 +154,7 @@ async function fetchCitySuggestions(city) {
     const apiUrl = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=${city}&limit=10`;
     const response = await fetch(apiUrl, {
         headers: {
-            'x-rapidapi-key': process.env.RAPIDAPI_KEY,  // Use environment variable here
+            'x-rapidapi-key': "",  // enetr your api key for the cities fetching hereßß 
             'x-rapidapi-host': 'wft-geo-db.p.rapidapi.com'
         }
     });
